@@ -25,6 +25,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt/requirements.txt
 
+            - name: Check files
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 3 -name "main.py" -o -name "run_once.py"
+
       - name: Run scanner
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

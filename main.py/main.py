@@ -11,7 +11,7 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
 
 COOLDOWN_MINUTES = 60
-BASE_URL = "https://api.bybit.eu"
+BASE_URL = "https://api.bybit.com"
 
 last_alert = {}
 

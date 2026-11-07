@@ -3,6 +3,8 @@ import logging
 import time
 from pathlib import Path
 
+import sys
+sys.path.insert(0, "main.py")
 import main as scanner
 
 STATE_FILE = Path(".scanner_state.json")
